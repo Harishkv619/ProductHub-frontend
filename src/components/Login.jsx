@@ -27,7 +27,7 @@ const Login = ({ onLogin }) => {
     }
 
     try {
-      const response = await axios.post("http://localhost:3000/login", data)
+      const response = await axios.post("https://producthub-backend.onrender.com/login", data)
       alert(response.data.message)
       onLogin()
       navigate('/products')

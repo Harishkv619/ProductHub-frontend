@@ -25,7 +25,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:3000/user", data)
+      const response = await axios.post("https://producthub-backend.onrender.com/user", data)
       alert("Signup Successful!")
       navigate('/login')
     } catch (error) {
